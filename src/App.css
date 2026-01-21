@@ -125,16 +125,19 @@ a:hover {
 .clip-item {
   display: flex;
   padding: 2px 15px;
-  border-radius: 5px;
   font-size: 0.875rem;
   cursor: pointer;
   margin-bottom: 3px;
+  /* border-bottom: .5px solid red; */
+  /* border-bottom: .5px solid var(--secondary-color); */
 }
 
-.clip-item.active {
+.clip-item.active,
+.clip-item:hover {
   background-color: var(--btn-color);
   color: var(--btn-hover-txt);
   font-weight: bold;
+  border-radius: 5px;
 }
 
 .btn.red {

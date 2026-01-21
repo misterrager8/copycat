@@ -1,20 +1,20 @@
 :root,
 html[data-theme="light"] {
-  --primary-bg: hsl(50, 84%, 90%);
+  --primary-bg: hsl(237 14 80);
   --primary-txt: #1a1a1a;
 
-  --secondary-color: hsl(51, 37%, 80%);
+  --secondary-color: hsl(235, 9%, 73%);
 
-  --btn-color: hsl(198, 95%, 20%);
+  --btn-color: hsl(289 2 23);
   --btn-hover-txt: #cccccc;
 }
 
 html[data-theme="dark"] {
-  --primary-bg: hsl(229, 51%, 20%);
+  --primary-bg: hsl(220 8 10);
   --primary-txt: #cccccc;
 
-  --secondary-color: hsl(228, 53%, 27%);
+  --secondary-color: hsl(210, 10%, 12%);
 
-  --btn-color: hsl(55, 71%, 70%);
+  --btn-color: hsl(94 10 66);
   --btn-hover-txt: #1a1a1a;
 }

@@ -3,7 +3,7 @@ export default function Dropdown({
   target,
   icon,
   text,
-  border = true,
+  border = false,
   showCaret = true,
   classNameBtn = "",
   classNameMenu = "",

@@ -2,7 +2,7 @@ export default function Button({
   text,
   icon,
   type_ = "button",
-  border = true,
+  border = false,
   active = false,
   onClick,
   disabled = false,

@@ -9,7 +9,7 @@ export default function Display() {
   const multiCtx = useContext(MultiContext);
 
   const [theme, setTheme] = useState(
-    localStorage.getItem("copycat-theme") || "light"
+    localStorage.getItem("copycat-theme") || "light",
   );
 
   const themes = ["light", "dark"];
@@ -23,8 +23,13 @@ export default function Display() {
     <div className="body">
       <div className="inner">
         <div className="nav-custom">
-          <Button icon="record" text="copycat" />
-          <Dropdown icon="paint-bucket" target="themes">
+          <div></div>
+          {/* <Button icon="record" text="copycat" /> */}
+          <Button
+            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+            icon={theme === "light" ? "sun-fill" : "moon-fill"}
+          />
+          {/* <Dropdown icon="paint-bucket" target="themes">
             {themes.map((x) => (
               <a
                 onClick={() => setTheme(x)}
@@ -35,7 +40,7 @@ export default function Display() {
                 {x}
               </a>
             ))}
-          </Dropdown>
+          </Dropdown> */}
         </div>
         <div className="mt-3">
           <div className="flex">
